@@ -32,10 +32,15 @@ class EventServiceProvider extends ServiceProvider
 
     /**
      * Determine if events and listeners should be automatically discovered.
+<<<<<<< HEAD
      *
      * @return bool
      */
     public function shouldDiscoverEvents()
+=======
+     */
+    public function shouldDiscoverEvents(): bool
+>>>>>>> 3fd1476306b6566ab56671540bda174d5f57aaba
     {
         return false;
     }
