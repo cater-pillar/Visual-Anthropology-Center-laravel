@@ -7,5 +7,7 @@
     <a href='/program/create' class='float-right nav-link'>CREATE PROGRAM</a>
     <a href='/gallery/create' class='float-right nav-link'>CREATE GALLERY</a>
     <a href='/applicants' class='float-right nav-link'>APPLICANTS</a>
+    <a href='/galleries/trash' class='float-right nav-link'>TRASH GALLERIES</a>
+    <a href='/programs/trash' class='float-right nav-link'>TRASH PROGRAMS</a>
 </div>
 @endif

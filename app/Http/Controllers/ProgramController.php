@@ -31,6 +31,21 @@ class ProgramController extends Controller
         ]);
     }
     // ************************
+    public function trash()
+    {
+
+        return view('trash', [
+            'items' => Program::onlyTrashed()->orderBy('created_at', 'desc')->get(),
+            'model' => 'program'
+        ]);
+    }
+    // ************************
+    public function restore($slug)
+    {
+        Program::onlyTrashed()->where('slug', $slug)->first()->restore();
+        return redirect('/programs')->with('success', 'Program restored!');
+    }
+    //******************************** */
     public function show($slug)
     {
         return view('program', [
@@ -85,6 +100,12 @@ class ProgramController extends Controller
     {
         Program::where('slug', $slug)->first()->delete();
         return redirect('/programs')->with('success', 'Program deleted!');
+    }
+    //******************************** */
+    public function delete($slug)
+    {
+        Program::withTrashed()->where('slug', $slug)->first()->forceDelete();
+        return redirect('/programs')->with('success', 'Program permanently deleted!');
     }
     //******************************** */
     public function edit($slug)

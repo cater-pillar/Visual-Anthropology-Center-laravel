@@ -18,6 +18,20 @@ class GalleryController extends Controller
         ]);
     }
     //********************* */
+    public function trash() {
+        
+        return view('trash', [
+            'items' => Gallery::onlyTrashed()->orderBy('deleted_at', 'desc')->get(),
+            'model' => 'gallery'
+        ]);
+    }
+    //********************* */
+    public function restore($slug)
+    {
+        Gallery::onlyTrashed()->where('slug', $slug)->first()->restore();
+        return redirect('/lab')->with('success', 'Gallery restored!');
+    }
+    //******************************** */
     public function create() {
         return view('create-gallery');
     }
@@ -56,6 +70,12 @@ class GalleryController extends Controller
     {
         Gallery::where('slug', $slug)->first()->delete();
         return redirect('/lab')->with('success', 'Gallery deleted!');
+    }
+    //******************************** */
+    public function delete($slug)
+    {
+        Gallery::withTrashed()->where('slug', $slug)->first()->forceDelete();
+        return redirect('/lab')->with('success', 'Gallery permanently deleted!');
     }
     //******************************** */
     public function edit($slug)

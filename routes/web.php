@@ -22,20 +22,26 @@ use App\Http\Controllers\SessionController;
 Route::get('/', [ProgramController::class, 'home']); 
 
 
-Route::get('/lab', [GalleryController::class, 'index']); 
+Route::get('/lab', [GalleryController::class, 'index']);
+Route::get('/galleries/trash', [GalleryController::class, 'trash'])->middleware('admin'); 
 Route::get('/gallery/create', [GalleryController::class, 'create'])->middleware('admin'); 
+Route::post('/gallery/restore/{slug}', [GalleryController::class, 'restore'])->middleware('admin'); 
 Route::get('/gallery/edit/{slug}', [GalleryController::class, 'edit'])->middleware('admin'); 
 Route::post('/gallery/update/{slug}', [GalleryController::class, 'update'])->middleware('admin'); 
 Route::post('/gallery/store', [GalleryController::class, 'store'])->middleware('admin');
 Route::post('/gallery/delete/{slug}', [GalleryController::class, 'destroy'])->middleware('admin');
+Route::post('/gallery/destroy/{slug}', [GalleryController::class, 'delete'])->middleware('admin');
 Route::get('/gallery/{slug}', [GalleryController::class, 'show']); 
 
 Route::get('/programs', [ProgramController::class, 'index']); 
+Route::get('/programs/trash', [ProgramController::class, 'trash'])->middleware('admin'); 
 Route::get('/program/create', [ProgramController::class, 'create'])->middleware('admin'); 
+Route::post('/program/restore/{slug}', [ProgramController::class, 'restore'])->middleware('admin'); 
 Route::get('/program/edit/{slug}', [ProgramController::class, 'edit'])->middleware('admin'); 
 Route::post('/program/update/{slug}', [ProgramController::class, 'update'])->middleware('admin');
 Route::post('/program/store', [ProgramController::class, 'store'])->middleware('admin');
 Route::post('/program/delete/{slug}', [ProgramController::class, 'destroy'])->middleware('admin');
+Route::post('/program/destroy/{slug}', [ProgramController::class, 'delete'])->middleware('admin');
 Route::get('/program/{slug}', [ProgramController::class, 'show']); 
 
 Route::get('/apply/{slug}', [ApplicantController::class, 'create']); 

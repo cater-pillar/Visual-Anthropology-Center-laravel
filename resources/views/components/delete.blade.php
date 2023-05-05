@@ -1,4 +1,4 @@
-@props(['slug', 'model'])
+@props(['slug', 'model', 'force' => false])
 
 <div x-data="{ modalOpen: false, }">
 
@@ -9,9 +9,9 @@
             <div class="relative box w-full md:w-96 mx-2">
                 <div class="p-8">
                     <h2 class="text-lg font-bold mb-4">Delete {{ $model }}</h2>
-                    <p class="mb-4">Are you sure you want to permanently delete {{ $model }}?</p>
+                    <p class="mb-4">Are you sure you want to @if($force) permanently @endif delete {{ $model }}?</p>
                     <div class="mx-auto w-fit">
-                        <form action="/{{ $model }}/delete/{{ $slug }}" method="post"
+                        <form action="/{{ $model }}/{{ $force ? "destroy" : "delete"}}/{{ $slug }}" method="post"
                             enctype="multipart/form-data" class="inline-block mr-5">
                             @csrf
                             <x-input-btn text="Delete" />
