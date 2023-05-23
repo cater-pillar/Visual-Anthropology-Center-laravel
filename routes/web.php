@@ -62,3 +62,7 @@ Route::get('/contact', function () {
 
 // is_active
 // trash
+// data is not kept after submiting in case something went wrong. poster photo is required for some reason
+//validator->fails, redirect()->withInput(), old('title')
+// applicants need more fields
+// deleting and editing tabs needs to be implemented
