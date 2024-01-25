@@ -22,7 +22,7 @@ use App\Http\Controllers\SessionController;
 Route::get('/', [ProgramController::class, 'home']); 
 
 
-Route::get('/lab', [GalleryController::class, 'index']);
+Route::get('/our-work', [GalleryController::class, 'index']);
 Route::get('/galleries/trash', [GalleryController::class, 'trash'])->middleware('admin'); 
 Route::get('/gallery/create', [GalleryController::class, 'create'])->middleware('admin'); 
 Route::post('/gallery/restore/{slug}', [GalleryController::class, 'restore'])->middleware('admin'); 
@@ -60,9 +60,7 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-// is_active
-// trash
-// data is not kept after submiting in case something went wrong. poster photo is required for some reason
-//validator->fails, redirect()->withInput(), old('title')
+
+// poster photo is required for some reason
 // applicants need more fields
-// deleting and editing tabs needs to be implemented
+// deleting tabs needs to be implemented

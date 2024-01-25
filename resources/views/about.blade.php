@@ -6,6 +6,7 @@
             {{ 'ABOUT US' }}
             </x-slot>
             <segment>
+                <h2 class="text-center font-bold text-xl mb-10" id="our-idea">OUR IDEA</h2>
                 <div class="container md:max-w-6xl flex flex-wrap mx-auto px-3">
                     <div class='w-full md:w-1/2 md:px-12 mb-10'>
                         <img src="storage/images/general/icons8-movie-80.png" class='w-16 mx-auto select-none'>
@@ -72,7 +73,6 @@
                     <div class='flex flex-wrap'>
                         <div class='w-full md:w-1/2 md:px-12 mb-10'>
                             <h2 class="text-center font-bold mb-4">Relja Pekić</h2>
-                            <h3 class="text-center font-bold mb-4">Director</h3>
                             <img src="storage/images/general/Relja.jpg" class='w-full md:w-1/2 rounded-3xl md:mx-auto select-none  mb-10'>
 
                             <p>Dedicated lover of anthropology, movies and football club "Partizan". He never gets tired
@@ -96,66 +96,73 @@
                         </div>
                         <div class='w-full md:w-1/2 md:px-12 mb-10'>
                             <h2 class="text-center font-bold mb-4">Miklós Barna Lipkovski</h2>
-                            <h3 class="text-center font-bold mb-4">Technical director</h3>
                             <img src="storage/images/general/Miklos.jpg" class='w-full md:w-1/2 rounded-3xl md:mx-auto select-none  mb-10'>
-                            <p>A free spirit and with a relaxed approach to life, Miklós is also a hard-worker and a
-                                dedicated movie lover. He is responsible for the technical proficiency and high quality
-                                of the films shot within the ŠVA.</p>
-                            <p>He was born in Budapest in 1987, spent his childhood years in Rome. Lived in Budapest,
-                                Bologna, Berlin and is currently based in Belgrade.</p>
+                            <p>A free spirit and with a relaxed approach to life, Miklós is also a hard-worker and a dedicated movie lover. He is responsible for the technical proficiency and high quality of the films shot within the ŠVA.</p>
+                            <p>He was born in Budapest in 1987, spent his childhood years in Rome. Lived in Budapest, Bologna, Berlin and is currently based in Belgrade.
+                            </p>
                             <p>Works as a freelance photographer, video artist and journalist.</p>
-                            <p>He finished his MA in television journalism and documentary film directing in 2006 at the
-                                University of film and theatre in Budapest.</p>
+                            <p>He finished his MA in television journalism and documentary film directing in 2006 at the University of film and theatre in Budapest.
+                            </p>
                             <p>He has been working in digital media covering different fields ever since.</p>
-                            <p>His focus has been split between journalism and artistic approach towards video- and
-                                filmmaking. After years of working on political and cultural journalism, due to
-                                political changes in Hungary today he focuses more on art.</p>
+                            <p>He has been working as a video journalist for Radio Free Europe since 2021.</p>
+                            <p>His focus has been split between journalism and artistic approach towards video- and filmmaking. His films have been selected for international festivals in the region and he has received a journalistic award in 2023.</p>
                             <p>Speaks Hungarian, Serbian, Italian, English and German.</p>
-                            <p>More info his <a href="http://bm34films.wix.com/bm34">website.</a></p>
-                        </div>
-                        <div class='w-full md:w-1/2 md:px-12 mb-10'>
-                            <h2 class="text-center font-bold mb-4">Ana Popović</h2>
-                            <h3 class="text-center font-bold mb-4">Artistic director</h3>
-                            <img src="storage/images/general/Ana.jpg" class='w-full md:w-1/2 md:mx-auto rounded-3xl select-none  mb-10'>
-                            <p>She is theatre director based in Belgrade, Serbia.</p>
-                            <p>Her carier has started in 2015 when she produced her first professional performance under
-                                the label „Tri groša/Threepenny“, theatre company she founded with Marija Barna
-                                Lipkovski the same year. She is also active colaborator of many other organizations and
-                                companies in the independent scene in Belgrade, experimenting with physical theatre,
-                                contemporary circus, light design, shadow theatre, ambiental theatre and also with
-                                interdisciplinary methods.</p>
-                            <p>After graduating, she spent a year in Central Java, Indonesia, as a laureate of the
-                                Indonesian goverment scholarship for traditional arts, as a student of Javanese shadow
-                                puppet theatre. Her master thesis defended in 2015. in University of Arts in Belgrade,
-                                Serbia, was the result of her scholarship research. She often gives lectures on
-                                Indonesian arts and culture and also is one of the founders of newly Open Centre for
-                                Asian Studies in Belgrade, Serbia. During her stay in Java, she developed interest in
-                                visual anthropology, so she became one of the founders of Centre for Visual Anthropology
-                                in Belgrade, Serbia in 2017.</p>
-                            <p>She is one of the authors and leaders of the theatre educating program „Little Theatre
-                                Experts“, children audience development and improvement of the conditions and aesthetic
-                                policies and criteria for children theatre.</p>
                         </div>
                         <div class='w-full md:w-1/2 md:px-12  mb-10'>
                             <h2 class="text-center font-bold mb-4">Marija Barna Lipkovski</h2>
-                            <h3 class="text-center font-bold mb-4">Project manager</h3>
                             <img src="storage/images/general/Marija.jpg" class='w-full md:w-1/2 md:mx-auto rounded-3xl select-none  mb-10'>
-                            <p>Dedicated, responsible and workaholic. Marija is a professional theater director and
-                                interest in visual anthropology is connected to her interest in performative aspects of
-                                anthropology.</p>
-                            <p>She is running the theatre company Tri Groša/Threepenny/Dreigroschen with her friend and
-                                collegue Ana Popović, and working as a freelance theater director.</p>
-                            <p>She was born in Belgrade, Serbia in September 1989. Immediately after finishing high
-                                school, she was admitted to Faculty of dramatic arts, Belgrade University of arts. There
-                                she finished the MA studies of theater and radio directing in 2015 as an excellent
-                                student. As a part of her studies she was a DAAD scholarship holder, and as such studied
-                                for one year on „Ernst Busch Hochshule f. Schauspielkunst“ in Berlin, Germany. She is
-                                currently working on her PhD studies of Scene design in Novi Sad Serbia.</p>
-                            <p>She is married to a Hungarian journalist and filmmaker Miklós Barna.</p>
-                            <p>Marija speaks English, German, Serbian and Russian.</p>
-                            <p>More on her <a href="http://marijalipkovski.wixsite.com/makilipkovski">website.</a></p>
+                            <p>Marija is a professional theater director, performer, researcher and educator. 
+                                Her interest in visual anthropology is connected to her interest in performative aspects of anthropology and anthropological aspects of the performative.
+                                </p>
+                            <p>She is running the theater company Tri Groša/Threepenny with her friend and colleague Ana Pinter. Tri Groša is dedicated to discovering new modes of artistic, production and management practices. She is also active as a freelance theater director.</p>
+                            <p>She was born in Belgrade, Serbia in September 1989. Immediately after finishing high school, she was admitted to the Faculty of dramatic arts, Belgrade University of arts. There she finished the MA studies of theater and radio directing in 2015 as an excellent student. As a part of her studies she was a DAAD scholarship holder, and as such studied for one year on „Ernst Busch Hochshule f. Schauspielkunst“ in Berlin, Germany. In 2020 she successfully obtained her PhD degree in Scene design with the thesis: “Construction of personal Self-identity in the Internet-chronotope”. </p>
+                            <p>Her obsessive subject is the obscure border between reality and fiction. She explores this border through various artistic genres and scientific articles. </p>
+                            <p>Marija is fluent in Serbian, English and German, and can communicate in Hungarian and Russian.</p>
+                        </div>
+                        <div class='w-full md:w-1/2 md:px-12 mb-10'>
+                            <h2 class="text-center font-bold mb-4">Ana Pinter</h2>
+                            <img src="storage/images/general/Ana.jpg" class='w-full md:w-1/2 md:mx-auto rounded-3xl select-none  mb-10'>
+                            <p>Ana Pinter is a stage director, researcher and educator based in Belgrade. She holds a BA in Comparative Literature and Theory of Literature and a BA in Theatre and Radio Directing, as well as an MA in Theory of Drama and Media. </p>
+                            <p>At the moment, she is enrolled in PhD transdisciplinary studies of contemporary art and media. She was one of the founders of the “Tri groša“ company (2015) that has introduced more than 30 performances, practices-as-research, educational and other projects to both international and local audiences so far. 
+                            </p>
+                            <p>In her practice, Ana is merging artistic and scientific fields, and consecutively developing new methods and approaches to performing arts audiences.</p> 
+                            <p>Ana’s initiation into anthropological discourses took shape in 2013-14 at the Institute of Indonesian Arts in Surakarta, Central Java, in the field of wayang kulit art.</p> 
+                            <p>She was one of the founders of the Visual Anthropology Center (2018), further solidifying her commitment to interdisciplinary exploration. Since 2020. with colleagues from Tri groša and VAC, Ana manages Community Centre Krov in Belgrade, a multifunctional space of non-formal education and highly participative social programs, trying out practices of the commons and self-sustainability as well as the principles of flat hierarchy.</p>
+                        </div>
+                        <div class='w-full md:w-1/2 md:px-12 mb-10'>
+                            <h2 class="text-center font-bold mb-4">Nenad Pinter</h2>
+                            <img src="storage/images/general/Nenad.jpg" class='w-full md:w-1/2 md:mx-auto rounded-3xl select-none  mb-10'>
+                            <p>Nenad Pinter is an audio-visual tech and multimedia producer. He's also a cultural producer and one of the coordinators of the Krov community center in Belgrade, Serbia. He's been involved in creating theatrical performances, multimedia exhibitions, and other contemporary digital performances.</p>
+                            <p>From 2017 to 2023, he worked as a coordinator at the Cultural center Rex and the Fund B92 Foundation. He helped organize and implement projects like Free Zone film festival, Battle for Knowledge, No Noise music festival, and Women empowering project. He was responsible for producing and implementing cultural programs and content.
+                            </p>
+                            <p>With his wife Ana Pinter he's also engaged in the theater and educational platform "Threepenny". Involved in creation on several theatrical performances, including Phaedra (2017), Not the right leg (2018), Nobody and nothing (2020), Hamlet (2022), and Where are you, God of machines? (2022).
+                            </p> 
+                            <p>Since 2019, he's been working as a producer and coordinator for the Visual Anthropology Center and the Krov community Center. He's responsible for managing projects, coordinating technical aspects, and working with local communities.
+                            </p> 
+                        </div>
+                        <div class='w-full md:w-1/2 md:px-12 mb-10'>
+                            <h2 class="text-center font-bold mb-4">Nikola Radeka</h2>
+                            <img src="storage/images/general/Nikola.jpg" class='w-full md:w-1/2 md:mx-auto rounded-3xl select-none  mb-10'>
+                            <p>Nikola Radeka is an ethnomusicologist from Belgrade; he completed his MA studies in ethnomusicology at the Faculty of Music of the University of Arts in Belgrade. He has been conducting ethnomusicological field research since 2008, which, through audiovisual ethnography, served as the initial spark for entering the field of documentary film.</p>
+                            <p>So far his research covered vocal practices of Dinaric immigrants and musicians in public transport in Belgrade, posthumous rituals among the Vlachs, the practice of electronic music performers (which also represents the current focus of research), and the two-part singing of the older vocal practice in the rural areas of Croatia and Bosnia & Herzegovina.
+                            </p>
+                            <p>He is the president and one of the founders of the Ethnomusicological Activities Centre, within which he has implemented several projects related to ethnomusicological field research. He was involved in production of documentary films, multimedia art and interactive sculpture. He is the founder and director of the FESTUM festival since 2010, as well as the Festival of Traditional Music held in Paris (2018), Belgrade (2019), and Kraljevo (2021).
+                            </p> 
+                            <p>He has been active in electronic music performance and music production since 2015. He founded a conceptual music event called Slivnik (Drain), which promotes alternative directions in popular electronic music.
+                            </p> 
                         </div>
                     </div>
+                </div>
+            </segment>
+            <segment>
+                @include('_separator')
+            </segment>
+            <segment  >
+                <h2 class="text-center font-bold text-xl mb-10" >OUR SPACE</h2>
+                <div class="container md:max-w-6xl mx-auto px-3">
+                    <img src="storage/images/general/photo-Our-Space-214.png" class='w-full md:w-1/2 rounded-3xl md:mx-auto select-none  mb-10'>
+                    <p><b>Community center Krov [Roof]</b> is a collectives of anthropologists, visual anthropologists, ﬁlm and theater directors, artists, ethnomusicologists and decentralized open source orchestra gathered around the idea of creating an <b>open common space</b> for the development of an audiovisual archive for ethnographic ﬁlms, multimedia exhibitions, ethnomusicological works, open source decentralization and knowledge sharing.</p>
+                    <p class="my-2"> You can find KROV's Facebook page <a href='https://www.facebook.com/cc.krov' target="_blank" class="underline text-theme">here.</a></p>
                 </div>
             </segment>
 </x-layout>
